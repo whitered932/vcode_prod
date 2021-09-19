@@ -40,7 +40,8 @@ const App = ({ sizeX }) => {
       img: "https://media.discordapp.net/attachments/880358646213652483/889092260325654568/c7dc1587871f6ffe.png",
       link: { title: "VK", url: "https://vk.com/tema_nejor" },
       shortDesc: "Unity & Kotlin разработчик, Екатеринбург",
-      fullDesc: "",
+      fullDesc:
+        "Привет! Меня зовут Артемий. Знаком с программированием несколько лет, но ни в одной сфере не преуспел, потому что много раз менял изучаемые направления. Наибольшего успеха достиг в GameDev и Android разработке. Помимо программирования занимался 3D.",
     },
     {
       name: "Андрей Михальченков",
@@ -55,7 +56,8 @@ const App = ({ sizeX }) => {
       img: "https://sun9-8.userapi.com/impg/q9BhH9_sxzwPII3gtqgPSG_mxoQQllucuSSVmw/px6apn5OyC0.jpg?size=1080x778&quality=96&sign=cc1cecffc5e8a69897dc91b134dde85e&type=album",
       link: { title: "VK", url: "https://vk.com/soryu.asuka.langley" },
       shortDesc: "Unity разработчик, Екатеринбург",
-      fullDesc: "",
+      fullDesc:
+        "Я делаю игры, мобильные приложения. Знаю синтаксис следующих языков: C#, Kotlin, Python, SQL и других. Все знания не глубокие.",
     },
   ]);
 
@@ -122,7 +124,6 @@ const App = ({ sizeX }) => {
                 <CardGrid size="l" style={{ marginTop: 15 }}>
                   {authors.map((author) => (
                     <ContentCard
-                      src={author.img}
                       header={author.name}
                       maxHeight={150}
                       text={author.fullDesc}
